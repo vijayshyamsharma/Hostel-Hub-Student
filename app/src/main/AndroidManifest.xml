@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mrvijay.loginfirebase">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hostel"
+        android:label="Student HostelHub"
+        android:roundIcon="@drawable/hostel"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".BroadcastActivity"
+            android:screenOrientation="sensorPortrait"
+            android:parentActivityName=".HomeActivity"/>
+
+        <activity
+            android:name=".MessActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".UserRequestListActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".requeststatus"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_requeststatus"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Logged"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Splash"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".RequestResultService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

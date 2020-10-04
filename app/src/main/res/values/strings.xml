@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">loginfirebase</string>
+
+    <string name="title_activity_rooms">Rooms</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_requeststatus">requeststatus</string>
+
+    <string-array name="weekdays">
+
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+
+    </string-array>
+</resources>
